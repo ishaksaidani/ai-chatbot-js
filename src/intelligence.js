@@ -301,7 +301,7 @@ class IntelligenceLayer {
       'worst', 'ugly', 'boring', 'annoying', 'frustrating', 'no',
     ];
 
-    const tokens = this.tokenize(text);
+    const tokens = (text || '').toLowerCase().replace(/[^a-z0-9\s']/g, '').split(/\s+/).filter((w) => w.length > 1);
     let score = 0;
     for (const t of tokens) {
       if (positive.includes(t)) score += 1;

@@ -84,7 +84,7 @@ class MemorySystem {
 
     const scored = memory.map((entry) => {
       const entryWords = this.tokenize(
-        (entry.input || '') + ' ' + (entry.output || '') + ' ' + (entry.topic || '')
+        (entry.input || '') + ' ' + (entry.output || '') + ' ' + (Array.isArray(entry.topics) ? entry.topics.join(' ') : (entry.topic || ''))
       );
       const overlap = queryWords.filter((w) => entryWords.includes(w)).length;
       const score = queryWords.length > 0 ? overlap / queryWords.length : 0;

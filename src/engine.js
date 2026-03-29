@@ -257,7 +257,7 @@ class ChatEngine {
    * Extract user information from input
    */
   extractUserInfo(input) {
-    const nameMatch = input.match(/(?:my name is|i'm called|call me|i am)\s+([a-zA-Z]+)/i);
+    const nameMatch = input.match(/(?:my name is|i'm called|call me|you can call me)\s+([a-zA-Z]+)/i);
     if (nameMatch) {
       const name = nameMatch[1].charAt(0).toUpperCase() + nameMatch[1].slice(1).toLowerCase();
       this.memory.setUserPref('userName', name);
