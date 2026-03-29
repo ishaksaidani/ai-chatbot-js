@@ -1,0 +1,22 @@
+{
+  "name": "ai-chatbot",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "ai",
+    "chatbot",
+    "self-improving"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Self-improving AI chatbot with memory, learning, and reasoning",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "uuid": "^13.0.0"
+  }
+}

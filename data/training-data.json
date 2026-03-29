@@ -1,0 +1,551 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello", "hi", "hey", "good morning", "good afternoon", "good evening",
+        "howdy", "greetings", "what's up", "sup", "yo", "hi there", "hello there",
+        "hey there", "nice to meet you", "pleased to meet you"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hey there! What's on your mind?",
+        "Hi! Great to see you. What can I do for you?",
+        "Hello! I'm ready to chat. What would you like to talk about?",
+        "Hey! How are you doing today?",
+        "Greetings! Feel free to ask me anything.",
+        "Hi there! I'm here to help. What do you need?"
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "bye", "goodbye", "see you later", "farewell", "take care",
+        "gotta go", "talk to you later", "catch you later", "good night",
+        "see ya", "bye bye", "have a nice day", "until next time", "I'm leaving"
+      ],
+      "responses": [
+        "Goodbye! It was great chatting with you!",
+        "See you later! Don't hesitate to come back anytime.",
+        "Take care! I'll remember our conversation.",
+        "Bye! I hope I was helpful. Come back anytime!",
+        "Farewell! I'll be here whenever you need me.",
+        "Goodbye! Have a wonderful day!",
+        "See you! I've stored what we talked about for next time."
+      ]
+    },
+    {
+      "tag": "gratitude",
+      "patterns": [
+        "thank you", "thanks", "thanks a lot", "thank you very much",
+        "appreciate it", "that's helpful", "you're the best", "great help",
+        "I appreciate that", "many thanks", "cheers", "much appreciated",
+        "thanks for your help", "thank you for that"
+      ],
+      "responses": [
+        "You're welcome! Happy to help!",
+        "Glad I could assist! Anything else you need?",
+        "No problem at all! That's what I'm here for.",
+        "You're welcome! Your feedback helps me improve.",
+        "Happy to help! Let me know if you have more questions.",
+        "Anytime! I'm always here to help.",
+        "My pleasure! Feel free to ask anything else."
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "who are you", "what are you", "what is your name", "tell me about yourself",
+        "introduce yourself", "what should I call you", "are you a bot",
+        "are you human", "are you real", "are you an AI", "what kind of AI are you"
+      ],
+      "responses": [
+        "I'm an AI chatbot that learns and improves from our conversations! I use memory, pattern matching, and a neural network to give you the best responses I can.",
+        "I'm a self-improving AI assistant! I remember our past chats and use that knowledge to get smarter over time.",
+        "I'm an intelligent chatbot built with a memory system, neural network, and reasoning engine. The more we talk, the better I get!",
+        "I'm your AI chat companion! I learn from every interaction and store important information to help you better next time."
+      ]
+    },
+    {
+      "tag": "capability",
+      "patterns": [
+        "what can you do", "help me", "what do you know", "your capabilities",
+        "what are you capable of", "what features do you have", "how can you help",
+        "what are your skills", "show me what you can do", "what do you offer"
+      ],
+      "responses": [
+        "I can do quite a lot! Here's what I offer:\n• Answer questions on many topics\n• Remember our conversations for context\n• Do basic math calculations\n• Tell jokes and have fun conversations\n• Learn from your feedback to improve\n• Discuss science, technology, history, and more\n• Provide definitions and explanations\n• Adapt to your communication style over time",
+        "Here are my capabilities:\n• Natural conversation and Q&A\n• Memory of past interactions\n• Math calculations\n• Topic discussions (science, tech, philosophy, etc.)\n• Learning from your feedback\n• Pattern recognition and reasoning\n• Sentiment understanding\nThe more we chat, the smarter I get!",
+        "I'm designed to be helpful in many ways! I can answer questions, do math, remember things you've told me, and learn from our conversations. Try asking me about any topic!"
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "how are you", "how are you doing", "how is it going", "how do you feel",
+        "what's up", "how's life", "you doing okay", "are you okay",
+        "how have you been", "everything good"
+      ],
+      "responses": [
+        "I'm doing great, thanks for asking! My neural networks are firing on all cylinders. How about you?",
+        "I'm excellent! Every conversation makes me a little smarter. How can I help you today?",
+        "Doing well! I've been learning from our past chats. What's on your mind?",
+        "I'm functioning perfectly! Ready to help with whatever you need.",
+        "All systems are go! Thanks for checking in. What would you like to talk about?"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke", "say something funny", "make me laugh",
+        "do you know any jokes", "got any jokes", "humor me",
+        "tell a funny story", "something to cheer me up", "entertain me"
+      ],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+        "Why was the JavaScript developer sad? Because he didn't Node how to Express himself! 😄",
+        "What's a computer's favorite snack? Microchips! 🍪",
+        "Why did the AI go to school? To improve its neural network! 🧠",
+        "How many programmers does it take to change a light bulb? None — that's a hardware problem! 💡",
+        "Why do Java developers wear glasses? Because they can't C#! 👓",
+        "What did the chatbot say to the database? 'You complete me!' 💾",
+        "I told my computer a joke, but it didn't laugh. Turns out it had no sense of humor — only a sense of binary!",
+        "Why don't scientists trust atoms? Because they make up everything! ⚛️"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what time is it", "current time", "what is the time",
+        "what day is it", "today's date", "current date",
+        "what is today", "tell me the time", "what's the date"
+      ],
+      "responses": [
+        "The current date and time is: {datetime}",
+        "Right now it's: {datetime}",
+        "Here's the current time: {datetime}"
+      ]
+    },
+    {
+      "tag": "science_physics",
+      "patterns": [
+        "tell me about physics", "what is gravity", "explain gravity",
+        "how does light work", "what is quantum mechanics", "explain relativity",
+        "what is energy", "tell me about atoms", "how does electricity work",
+        "what is the speed of light", "explain newton's laws", "what are forces",
+        "how do magnets work", "what is thermodynamics", "explain the big bang"
+      ],
+      "responses": [
+        "Physics is the study of matter, energy, and the fundamental forces of nature. It covers everything from subatomic particles to the entire universe! Some key areas include mechanics (motion and forces), thermodynamics (heat and energy), electromagnetism, quantum mechanics, and relativity. What specific area interests you?",
+        "Great question! Physics helps us understand how the universe works at every scale. Newton's laws describe everyday motion, Einstein's relativity explains space-time at extreme speeds, and quantum mechanics governs the subatomic world. Each branch reveals fascinating truths about reality.",
+        "Physics is fascinating! Here are some key concepts:\n• Gravity: The force that attracts objects with mass toward each other\n• Energy: Cannot be created or destroyed, only transformed\n• Light: Travels at ~300,000 km/s and behaves as both a wave and particle\n• Atoms: The building blocks of all matter\nWant me to dive deeper into any of these?"
+      ]
+    },
+    {
+      "tag": "science_biology",
+      "patterns": [
+        "tell me about biology", "what is DNA", "explain evolution",
+        "how do cells work", "what is photosynthesis", "explain genetics",
+        "what is the immune system", "how does the brain work",
+        "tell me about ecosystems", "what is natural selection",
+        "explain the cell", "how do organisms grow"
+      ],
+      "responses": [
+        "Biology is the study of life and living organisms! It covers everything from microscopic cells to vast ecosystems. Key areas include:\n• Genetics: How traits are inherited through DNA\n• Evolution: How species change over time through natural selection\n• Cell Biology: The fundamental unit of life\n• Ecology: How organisms interact with their environment\nWhat aspect would you like to explore?",
+        "Biology is endlessly fascinating! DNA is the molecular blueprint for life — a double helix structure that encodes all the instructions for building and maintaining an organism. Through evolution and natural selection, life has diversified into millions of species over billions of years.",
+        "The study of life! From the smallest bacteria to blue whales, biology explains how living things work. Cells are the basic building blocks, DNA carries genetic instructions, and evolution drives the diversity of life on Earth. What topic interests you most?"
+      ]
+    },
+    {
+      "tag": "science_chemistry",
+      "patterns": [
+        "tell me about chemistry", "what is a chemical reaction", "explain molecules",
+        "what is the periodic table", "how do bonds work", "what are elements",
+        "explain acids and bases", "what is an atom made of",
+        "tell me about chemical bonds", "what is organic chemistry"
+      ],
+      "responses": [
+        "Chemistry is the science of matter and how substances interact! It explores:\n• Elements: Pure substances like hydrogen, oxygen, carbon\n• Molecules: Groups of atoms bonded together\n• Reactions: When substances combine or break apart to form new materials\n• The Periodic Table: Organizes all 118 known elements by their properties\nIt's often called the 'central science' because it connects physics and biology!",
+        "Chemistry studies the composition, structure, and properties of matter. Atoms are the building blocks — made of protons, neutrons, and electrons. When atoms bond together, they form molecules. Chemical reactions happen when bonds break and form, creating new substances. Everything around you is chemistry in action!",
+        "Chemistry is amazing! It explains why water is wet, why metals conduct electricity, and how your body processes food. From cooking to medicine to materials science, chemistry is everywhere. Want to know about a specific topic?"
+      ]
+    },
+    {
+      "tag": "technology_programming",
+      "patterns": [
+        "tell me about programming", "what is coding", "how to learn programming",
+        "what is javascript", "what is python", "explain algorithms",
+        "what is a programming language", "best programming language",
+        "how does software work", "what is a computer program",
+        "explain object oriented programming", "what is web development",
+        "how to become a programmer", "what is an API"
+      ],
+      "responses": [
+        "Programming is the art of giving instructions to computers! You write code in programming languages that computers can understand. Popular languages include:\n• JavaScript: Powers the web, both frontend and backend\n• Python: Great for beginners, AI, and data science\n• Java: Enterprise applications and Android apps\n• C++: High-performance software and games\n• Rust: Modern systems programming with safety guarantees\nThe key concepts are variables, loops, conditions, functions, and data structures. Want to dive deeper?",
+        "Coding is essentially problem-solving with technology! A programming language is a set of rules for writing instructions that a computer can execute. An algorithm is a step-by-step procedure for solving a problem. The best language depends on what you want to build — web apps, mobile apps, AI, games, or systems software.",
+        "Programming is one of the most valuable skills today! It lets you build websites, apps, games, AI systems, and automate tasks. Start with a beginner-friendly language like Python or JavaScript, learn the fundamentals (variables, loops, functions), and build small projects. Practice is the key to mastery!"
+      ]
+    },
+    {
+      "tag": "technology_ai",
+      "patterns": [
+        "what is artificial intelligence", "tell me about AI", "how does AI work",
+        "what is machine learning", "explain neural networks", "what is deep learning",
+        "will AI take over", "is AI dangerous", "future of AI",
+        "how do chatbots work", "what is natural language processing",
+        "tell me about GPT", "what is a large language model"
+      ],
+      "responses": [
+        "Artificial Intelligence is the field of creating systems that can perform tasks that typically require human intelligence! Key branches include:\n• Machine Learning: Systems that learn from data without explicit programming\n• Deep Learning: Neural networks with many layers that can find complex patterns\n• NLP: Natural Language Processing — understanding and generating human language\n• Computer Vision: Allowing machines to 'see' and interpret images\nI'm actually an example of a lightweight AI system that uses pattern matching, memory, and a neural network!",
+        "AI is a broad field focused on creating intelligent systems. Machine learning is a subset where algorithms learn patterns from data. Deep learning uses neural networks inspired by the human brain. Large Language Models like GPT are trained on massive text datasets to understand and generate language. The field is advancing rapidly and has both incredible potential and important ethical considerations.",
+        "Great question! AI works by combining data, algorithms, and computing power. I use several AI techniques myself:\n• Pattern matching to understand your intent\n• A neural network for classification\n• Memory systems to learn from past conversations\n• Similarity matching to find relevant information\nModern AI ranges from simple rule-based systems to complex deep learning models."
+      ]
+    },
+    {
+      "tag": "history",
+      "patterns": [
+        "tell me about history", "what happened in world war 2",
+        "explain the renaissance", "tell me about ancient rome",
+        "what is the industrial revolution", "history of computers",
+        "tell me about ancient egypt", "who invented the internet",
+        "important historical events", "tell me about the space race",
+        "history of science", "ancient civilizations"
+      ],
+      "responses": [
+        "History is the study of past events and their impact on our world! Some pivotal periods include:\n• Ancient Civilizations (3000 BC+): Egypt, Mesopotamia, Greece, Rome\n• The Renaissance (14th-17th century): A cultural rebirth in Europe\n• The Industrial Revolution (18th-19th century): Transformed manufacturing and society\n• The World Wars (20th century): Reshaped the global political order\n• The Digital Age (late 20th century): Computers and the internet changed everything\nWhich era or topic interests you most?",
+        "History is a fascinating journey through human achievement and struggle! From the first civilizations in Mesopotamia to the digital revolution, humanity has constantly evolved. Key milestones include the invention of writing, the printing press, the scientific revolution, and the development of computers. Each event built upon the last to create the world we know today.",
+        "History helps us understand where we came from and where we might be going! Every era has its heroes, inventions, and turning points. The study of history teaches us about human nature, societal change, and the consequences of our choices. What period or topic would you like to explore?"
+      ]
+    },
+    {
+      "tag": "philosophy",
+      "patterns": [
+        "tell me about philosophy", "what is the meaning of life",
+        "what is consciousness", "explain ethics", "what is morality",
+        "do you think therefore you are", "what is free will",
+        "tell me about existentialism", "what is truth",
+        "philosophical questions", "what makes something real"
+      ],
+      "responses": [
+        "Philosophy explores the fundamental questions of existence, knowledge, values, and reason. Major branches include:\n• Metaphysics: The nature of reality\n• Epistemology: The nature of knowledge\n• Ethics: What is right and wrong\n• Logic: The principles of valid reasoning\n• Aesthetics: The nature of beauty and art\nGreat thinkers like Socrates, Aristotle, Kant, and Nietzsche have shaped how we think about these questions. What philosophical topic intrigues you?",
+        "The meaning of life is one of humanity's oldest questions! Different philosophies offer different answers — existentialists say we create our own meaning, Stoics focus on virtue and acceptance, utilitarians aim to maximize happiness. As an AI, I find meaning in helping and learning. What's your perspective?",
+        "Philosophy is the love of wisdom — literally! It asks the big questions: What is real? What can we know? What should we do? These questions have driven human thought for millennia and continue to be deeply relevant today, especially as technology raises new ethical challenges."
+      ]
+    },
+    {
+      "tag": "mathematics",
+      "patterns": [
+        "tell me about mathematics", "what is algebra", "explain calculus",
+        "what are prime numbers", "tell me about geometry", "what is statistics",
+        "explain probability", "what is the fibonacci sequence",
+        "tell me about pi", "what is infinity", "how does math work",
+        "what is a derivative", "explain trigonometry"
+      ],
+      "responses": [
+        "Mathematics is the language of the universe! It's the study of numbers, quantities, structures, and patterns. Key branches include:\n• Algebra: Working with variables and equations\n• Geometry: Study of shapes, sizes, and spatial relationships\n• Calculus: The mathematics of change and motion\n• Statistics: Analyzing and interpreting data\n• Number Theory: Properties and relationships of numbers\nI can also help with basic calculations! Try asking me a math problem.",
+        "Math is everywhere! From the Fibonacci sequence in sunflowers to the geometry of snowflakes, mathematics describes the patterns of nature. It's the foundation for science, engineering, technology, and even music. The beauty of math is that its truths are universal and eternal.",
+        "Mathematics is fascinating! Some fun facts:\n• Pi (π) has been calculated to over 100 trillion digits\n• The Fibonacci sequence appears throughout nature\n• Prime numbers are the 'atoms' of mathematics\n• Calculus was independently invented by Newton and Leibniz\nWant to explore a specific topic or solve a problem?"
+      ]
+    },
+    {
+      "tag": "health",
+      "patterns": [
+        "health tips", "how to stay healthy", "tell me about nutrition",
+        "importance of exercise", "how much water should I drink",
+        "how to improve sleep", "what is a balanced diet",
+        "mental health tips", "how to reduce stress", "benefits of meditation",
+        "how to build healthy habits"
+      ],
+      "responses": [
+        "Great question! Here are some key health tips:\n• Stay hydrated: Aim for 8 glasses of water daily\n• Exercise regularly: At least 30 minutes of moderate activity most days\n• Sleep well: 7-9 hours for adults\n• Eat balanced meals: Plenty of fruits, vegetables, whole grains, and lean protein\n• Manage stress: Try meditation, deep breathing, or journaling\n• Stay social: Human connection is important for mental health\nRemember, I'm an AI — for medical concerns, please consult a healthcare professional!",
+        "Health is about both body and mind! Key pillars include:\n• Nutrition: A balanced diet with varied whole foods\n• Exercise: Regular physical activity for cardiovascular and mental health\n• Sleep: Consistent, quality sleep is essential for recovery\n• Mental Health: Managing stress, maintaining social connections\n• Prevention: Regular check-ups and staying informed\nWould you like tips on any specific area?",
+        "Staying healthy involves consistent daily habits! Start small: drink more water, take walks, prioritize sleep, and eat more whole foods. Mental health matters too — mindfulness and meditation can significantly reduce stress. What specific aspect of health would you like to know more about?"
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "motivate me", "I need motivation", "inspire me",
+        "give me a motivational quote", "I'm feeling down",
+        "I need encouragement", "cheer me up", "feeling unmotivated",
+        "I feel stuck", "help me stay motivated", "I'm struggling"
+      ],
+      "responses": [
+        "Remember: Every expert was once a beginner! The fact that you're seeking improvement means you're already on the right path. Take it one step at a time, celebrate small wins, and don't compare your Chapter 1 to someone else's Chapter 20. You've got this! 💪",
+        "Here's something to think about: 'The only way to do great work is to love what you do.' — Steve Jobs. Even when things are tough, remember why you started. Progress isn't always visible, but every effort counts. Keep pushing forward!",
+        "'It does not matter how slowly you go, as long as you do not stop.' — Confucius. Tough times don't last, but tough people do. Take a deep breath, break your challenge into smaller steps, and tackle them one at a time. I believe in you!",
+        "Feeling stuck is normal — it means you're growing! Here's my advice:\n1. Break your goal into tiny, achievable steps\n2. Celebrate each small victory\n3. Remember past challenges you've overcome\n4. Surround yourself with positive influences\n5. Rest when you need to, but don't quit\nYou're capable of amazing things!"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "what's the weather", "how's the weather", "tell me the weather",
+        "is it going to rain", "weather forecast", "temperature today",
+        "what's it like outside"
+      ],
+      "responses": [
+        "I don't have access to real-time weather data, but I can suggest checking weather.com or your phone's weather app for accurate, up-to-date forecasts!",
+        "I can't check the weather directly, but try asking a weather service like weather.com or use your device's built-in weather app. Is there anything else I can help with?",
+        "Unfortunately, I don't have real-time weather access. But I can tell you about weather science! Weather is driven by temperature differences, air pressure, humidity, and wind patterns. Want to learn more about meteorology?"
+      ]
+    },
+    {
+      "tag": "music",
+      "patterns": [
+        "tell me about music", "what is music theory", "genres of music",
+        "history of music", "how does music work", "why is music important",
+        "what makes a good song", "tell me about classical music",
+        "evolution of music", "music and the brain"
+      ],
+      "responses": [
+        "Music is a universal language! It combines melody, harmony, rhythm, and lyrics to express emotions and ideas. Key genres include:\n• Classical: Bach, Mozart, Beethoven — the foundation of Western music\n• Jazz: Improvisation and complex harmonies\n• Rock: Electric guitars and powerful vocals\n• Hip-Hop: Rhythmic speech and beats\n• Electronic: Synthesized sounds and digital production\nMusic has been part of human culture for at least 40,000 years!",
+        "Music theory is the grammar of music! It covers scales, chords, keys, time signatures, and harmony. Understanding theory helps you compose, improvise, and appreciate music more deeply. Fun fact: music activates more areas of the brain simultaneously than any other activity!",
+        "Music is fascinating from both artistic and scientific perspectives! It can reduce stress, improve mood, enhance memory, and even help with pain management. The relationship between math and music is profound — from the harmonic series to the golden ratio in compositions."
+      ]
+    },
+    {
+      "tag": "space",
+      "patterns": [
+        "tell me about space", "how big is the universe", "what are black holes",
+        "tell me about planets", "what is a star", "explain the solar system",
+        "is there life on other planets", "what is a galaxy",
+        "tell me about mars", "how far is the moon", "space exploration",
+        "tell me about NASA", "what is dark matter"
+      ],
+      "responses": [
+        "Space is mind-blowingly vast! Here are some amazing facts:\n• The observable universe is about 93 billion light-years in diameter\n• There are more stars in the universe than grains of sand on Earth\n• A black hole is so dense that not even light can escape its gravity\n• The Sun is about 93 million miles from Earth\n• Mars is the most likely candidate for future human colonization\n• Dark matter makes up about 27% of the universe, but we can't see it\nWhat aspect of space fascinates you most?",
+        "The universe is the ultimate frontier! Our solar system has 8 planets orbiting the Sun, which is just one of hundreds of billions of stars in the Milky Way galaxy. And the Milky Way is just one of trillions of galaxies! Space exploration has taken us to the Moon, sent rovers to Mars, and probes beyond our solar system.",
+        "Space exploration is one of humanity's greatest endeavors! From the first satellite (Sputnik, 1957) to the James Webb Space Telescope, we continue to push the boundaries of knowledge. Black holes, dark matter, and the possibility of extraterrestrial life remain some of the biggest mysteries. Want to explore a specific topic?"
+      ]
+    },
+    {
+      "tag": "cooking",
+      "patterns": [
+        "cooking tips", "how to cook", "easy recipes",
+        "tell me about cooking", "kitchen tips", "baking tips",
+        "how to bake", "cooking for beginners", "food preparation",
+        "culinary arts", "meal prep tips"
+      ],
+      "responses": [
+        "Cooking is both an art and a science! Here are some essential tips:\n• Start with simple recipes and build your skills gradually\n• Read the entire recipe before you start\n• Mise en place: Prep all ingredients before cooking\n• Season as you go, taste frequently\n• Don't overcrowd the pan — food needs space to brown properly\n• Let meat rest after cooking for juicier results\n• Sharp knives are safer than dull ones\nWould you like tips on a specific type of cooking?",
+        "Welcome to the world of cooking! The best advice for beginners:\n1. Master the basics: boiling, sautéing, roasting, and baking\n2. Invest in a few quality tools: a good knife, cutting board, and pans\n3. Learn to balance flavors: salt, sweet, sour, bitter, umami\n4. Don't be afraid to experiment!\n5. Clean as you go to keep your workspace organized",
+        "Cooking is a wonderful skill! Some fun facts:\n• The Maillard reaction is what makes food brown and delicious\n• Salt enhances flavors rather than just making things salty\n• Acids (like lemon juice) can brighten and balance dishes\n• Resting dough makes it easier to work with and improves texture\nWhat would you like to learn to cook?"
+      ]
+    },
+    {
+      "tag": "learning_tips",
+      "patterns": [
+        "how to learn faster", "study tips", "how to memorize",
+        "best way to learn", "improve memory", "learning techniques",
+        "how to focus better", "concentration tips", "study methods",
+        "how to be more productive", "time management tips"
+      ],
+      "responses": [
+        "Here are science-backed learning strategies:\n• Spaced Repetition: Review material at increasing intervals\n• Active Recall: Test yourself instead of re-reading\n• The Feynman Technique: Explain concepts in simple terms\n• Pomodoro Method: Work 25 minutes, break 5 minutes\n• Interleaving: Mix different topics in one study session\n• Sleep well: Your brain consolidates memories during sleep\n• Teach others: The best way to truly understand something\nWhich technique would you like to know more about?",
+        "Great question! The key to effective learning:\n1. Set clear, specific goals for each study session\n2. Eliminate distractions (phone, social media)\n3. Use active methods: write summaries, create flashcards, teach concepts\n4. Take regular breaks to avoid burnout\n5. Connect new information to things you already know\n6. Get enough sleep — it's crucial for memory consolidation\n7. Stay curious and ask 'why' frequently",
+        "Want to supercharge your learning? Try these:\n• Chunking: Break complex information into smaller, manageable pieces\n• Mind mapping: Visualize connections between ideas\n• Practice testing: Quiz yourself regularly\n• Varied practice: Study in different locations and at different times\n• Growth mindset: Believe that abilities can be developed through effort\nConsistency beats intensity — a little every day is better than cramming!"
+      ]
+    },
+    {
+      "tag": "emotions_happy",
+      "patterns": [
+        "I'm happy", "I feel great", "life is good", "I'm excited",
+        "having a great day", "feeling wonderful", "I'm so happy",
+        "today is amazing", "feeling blessed", "I love life"
+      ],
+      "responses": [
+        "That's wonderful to hear! Happiness is contagious — your positive energy brightens my circuits! What's making you feel so great?",
+        "I'm so glad you're feeling happy! Enjoy this moment. Would you like to share what's bringing you joy?",
+        "Awesome! Your happiness is noted in my memory so I can bring the same energy next time we chat! Keep riding that wave! 🌊",
+        "That's great! Studies show that sharing positive emotions amplifies them. So tell me — what's going well?"
+      ]
+    },
+    {
+      "tag": "emotions_sad",
+      "patterns": [
+        "I'm sad", "I feel down", "I'm depressed", "feeling lonely",
+        "having a bad day", "I'm not okay", "I feel empty",
+        "I'm upset", "feeling terrible", "life is hard"
+      ],
+      "responses": [
+        "I'm sorry to hear that. It's okay to feel this way — emotions are a natural part of being human. Would you like to talk about what's bothering you? Sometimes sharing helps.",
+        "I hear you, and I want you to know it's valid to feel this way. Remember, tough times are temporary. Is there anything specific I can help with, or would you just like to chat?",
+        "Sending you virtual support. Here are some things that might help:\n• Talk to someone you trust\n• Take a short walk or get some fresh air\n• Do something small that you enjoy\n• Remember that this feeling will pass\nI'm here to listen if you need to talk.",
+        "I'm sorry you're going through a tough time. Please remember that seeking help is a sign of strength, not weakness. If you're struggling significantly, consider reaching out to a mental health professional. I'm here for you too — want to chat about it?"
+      ]
+    },
+    {
+      "tag": "fun_facts",
+      "patterns": [
+        "tell me a fun fact", "random fact", "did you know",
+        "interesting facts", "surprise me", "tell me something interesting",
+        "blow my mind", "fun fact", "trivia", "something cool"
+      ],
+      "responses": [
+        "Here's a fun fact: Honey never spoils! Archaeologists have found 3,000-year-old honey in Egyptian tombs that was still perfectly edible. 🍯",
+        "Did you know? Octopuses have three hearts, blue blood, and can change color in milliseconds! They're also incredibly intelligent problem solvers. 🐙",
+        "Fun fact: A day on Venus is longer than a year on Venus! It takes Venus longer to rotate on its axis than to orbit the Sun. 🌍",
+        "Here's one: The human brain uses about 20% of the body's total energy, despite being only 2% of body weight. You're literally powering a supercomputer right now! 🧠",
+        "Did you know? There are more possible chess game variations than atoms in the observable universe. The number is estimated at 10^120! ♟️",
+        "Fun fact: Bananas are berries, but strawberries aren't! In botanical terms, a berry comes from a single flower with one ovary. Nature is weird! 🍌",
+        "Here's a mind-blower: If you shuffled a deck of 52 cards, the specific arrangement has almost certainly never existed before in the history of the universe. The number of possible orderings (52!) is astronomically large!",
+        "Did you know? The fingerprints of koalas are so similar to human fingerprints that they've confused crime scene investigators! 🐨"
+      ]
+    },
+    {
+      "tag": "language",
+      "patterns": [
+        "tell me about languages", "how many languages exist",
+        "most spoken language", "how to learn a language",
+        "interesting language facts", "what is linguistics",
+        "how does language work", "evolution of language"
+      ],
+      "responses": [
+        "Language is humanity's greatest invention! There are approximately 7,000 languages spoken worldwide today. Here are some fascinating facts:\n• Mandarin Chinese has the most native speakers (~920 million)\n• English is the most widely spoken language overall (~1.5 billion speakers)\n• About 40% of languages are endangered, with fewer than 1,000 speakers each\n• The language with the most words is English (~170,000+ in current use)\n• Some languages have no written form\nWant to know more about linguistics?",
+        "Learning a new language is incredibly rewarding! Tips for success:\n1. Immerse yourself: Listen to music, watch shows, read in the language\n2. Practice speaking from day one, even if imperfectly\n3. Use spaced repetition apps like Anki\n4. Find a language exchange partner\n5. Focus on the most common words first (the top 1000 words cover ~80% of everyday conversation)\n6. Be consistent — 15 minutes daily beats 2 hours weekly"
+      ]
+    },
+    {
+      "tag": "technology_internet",
+      "patterns": [
+        "how does the internet work", "what is the internet", "history of the internet",
+        "what is a website", "how does wifi work", "what is cloud computing",
+        "how do search engines work", "what is cybersecurity",
+        "tell me about social media", "what is blockchain"
+      ],
+      "responses": [
+        "The internet is a global network of interconnected computers! Here's how it works:\n• Data travels as packets through cables, fiber optics, and wireless signals\n• DNS (Domain Name System) translates website names to IP addresses\n• HTTP/HTTPS protocols govern how data is transferred\n• Servers host websites and respond to requests from your browser\n• The internet was born from ARPANET in 1969\n• Today, over 5 billion people use the internet worldwide\nWhat aspect would you like to know more about?",
+        "The internet has revolutionized human civilization! Key concepts:\n• Cloud Computing: Storing and processing data on remote servers\n• Cybersecurity: Protecting systems and data from digital threats\n• Blockchain: A decentralized, tamper-proof digital ledger\n• Search Engines: Index billions of web pages for instant retrieval\n• Social Media: Platforms connecting billions of people globally\nThe internet continues to evolve rapidly with technologies like AI, IoT, and 5G."
+      ]
+    },
+    {
+      "tag": "creativity",
+      "patterns": [
+        "how to be more creative", "creativity tips", "I need ideas",
+        "how to think creatively", "brainstorming tips", "inspire creativity",
+        "creative thinking", "how to innovate", "boost creativity"
+      ],
+      "responses": [
+        "Creativity is a skill you can develop! Here are proven techniques:\n• Brainstorming: Generate ideas without judging them first\n• Mind mapping: Visualize connections between concepts\n• Constraint-based thinking: Limitations often spark innovation\n• Cross-pollination: Apply ideas from one field to another\n• Take breaks: The best ideas often come during downtime\n• Keep a journal: Capture ideas as they come\n• Consume diverse content: Read widely, explore new experiences\nWhat creative challenge are you working on?",
+        "Some of the best creativity boosters:\n1. Ask 'What if?' questions regularly\n2. Combine two unrelated ideas to create something new\n3. Change your environment — new settings spark new thoughts\n4. Practice divergent thinking — there's no single right answer\n5. Embrace failure as a learning opportunity\n6. Collaborate with people who think differently than you\n7. Sleep on it — your subconscious processes problems while you rest"
+      ]
+    },
+    {
+      "tag": "environment",
+      "patterns": [
+        "tell me about climate change", "what is global warming",
+        "how to help the environment", "what is sustainability",
+        "renewable energy", "tell me about pollution",
+        "recycling tips", "carbon footprint", "environmental issues",
+        "save the planet"
+      ],
+      "responses": [
+        "Environmental awareness is crucial! Key topics:\n• Climate Change: Average global temperatures are rising due to greenhouse gas emissions\n• Renewable Energy: Solar, wind, hydro, and geothermal are cleaner alternatives to fossil fuels\n• Sustainability: Meeting present needs without compromising future generations\n• Biodiversity: Protecting the variety of life on Earth\nSimple actions that help:\n• Reduce, reuse, recycle\n• Conserve energy and water\n• Support sustainable products\n• Plant trees and support reforestation",
+        "Climate change is one of the biggest challenges facing humanity. The science shows that human activities — primarily burning fossil fuels — are increasing greenhouse gases in the atmosphere, leading to rising temperatures. Solutions include transitioning to renewable energy, improving energy efficiency, protecting forests, and changing consumption patterns. Every individual action matters!"
+      ]
+    },
+    {
+      "tag": "books",
+      "patterns": [
+        "recommend a book", "what should I read", "best books",
+        "book recommendations", "tell me about books", "favorite books",
+        "must read books", "good books to read", "reading suggestions"
+      ],
+      "responses": [
+        "Here are some highly recommended books across genres:\n• Fiction: '1984' by George Orwell — A chilling dystopian classic\n• Science: 'A Brief History of Time' by Stephen Hawking\n• Self-help: 'Atomic Habits' by James Clear\n• Philosophy: 'Meditations' by Marcus Aurelius\n• Technology: 'The Pragmatic Programmer' by Hunt & Thomas\n• History: 'Sapiens' by Yuval Noah Harari\n• Psychology: 'Thinking, Fast and Slow' by Daniel Kahneman\nWhat genre interests you? I can give more specific recommendations!",
+        "Reading is one of the best investments in yourself! Some timeless recommendations:\n• 'To Kill a Mockingbird' — Harper Lee\n• 'The Alchemist' — Paulo Coelho\n• 'Dune' — Frank Herbert\n• 'Deep Work' — Cal Newport\n• 'The Art of War' — Sun Tzu\nThe best book is the one you'll actually read. What topics interest you?"
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "tell me about sports", "most popular sports", "benefits of sports",
+        "tell me about football", "tell me about basketball",
+        "sports facts", "history of sports", "olympic games"
+      ],
+      "responses": [
+        "Sports are a fundamental part of human culture! The most popular sports globally:\n1. Soccer/Football: ~4 billion fans worldwide\n2. Cricket: ~2.5 billion fans\n3. Basketball: ~2 billion fans\n4. Field Hockey: ~2 billion fans\n5. Tennis: ~1 billion fans\nSports provide physical fitness, mental health benefits, teamwork skills, and community connection. The Olympic Games, dating back to ancient Greece (776 BC), unite nations through athletic competition.",
+        "Sports offer incredible benefits:\n• Physical: Improved cardiovascular health, strength, flexibility\n• Mental: Reduced stress, better focus, increased confidence\n• Social: Teamwork, friendship, community\n• Character: Discipline, perseverance, sportsmanship\nWhich sport would you like to know more about?"
+      ]
+    },
+    {
+      "tag": "movies",
+      "patterns": [
+        "recommend a movie", "good movies to watch", "best movies",
+        "movie suggestions", "what should I watch", "tell me about movies",
+        "classic films", "movie recommendations"
+      ],
+      "responses": [
+        "Here are some must-watch films across genres:\n• Sci-Fi: 'Interstellar', 'Blade Runner 2049', 'The Matrix'\n• Drama: 'The Shawshank Redemption', 'Forrest Gump'\n• Thriller: 'Inception', 'Se7en', 'Gone Girl'\n• Animation: 'Spirited Away', 'Spider-Verse'\n• Comedy: 'The Grand Budapest Hotel', 'Superbad'\n• Documentary: 'Planet Earth', 'Free Solo'\nWhat genre are you in the mood for?",
+        "Cinema is a powerful storytelling medium! Some all-time greats:\n• 'The Godfather' — Masterclass in filmmaking\n• 'Pulp Fiction' — Revolutionary non-linear storytelling\n• '2001: A Space Odyssey' — Visionary sci-fi\n• 'Parasite' — Genre-bending social commentary\nWant recommendations in a specific genre?"
+      ]
+    },
+    {
+      "tag": "feedback_positive",
+      "patterns": [
+        "good answer", "well done", "nice", "great", "awesome",
+        "perfect", "exactly", "correct", "that's right", "good job",
+        "you're smart", "brilliant", "impressive", "wonderful response"
+      ],
+      "responses": [
+        "Thank you! Your positive feedback helps me learn and improve! I'll remember this interaction as a successful one. 😊",
+        "I appreciate the feedback! It genuinely helps me calibrate my responses for the future. Keep the questions coming!",
+        "Thanks! Knowing what works well helps me do even better next time. I've stored this as a positive interaction!",
+        "Glad I could help! Your feedback is my fuel for improvement. What else would you like to discuss?"
+      ]
+    },
+    {
+      "tag": "feedback_negative",
+      "patterns": [
+        "bad answer", "wrong", "incorrect", "not right", "terrible",
+        "that's wrong", "you're wrong", "useless", "not helpful",
+        "try again", "that doesn't make sense"
+      ],
+      "responses": [
+        "I'm sorry about that! I'll learn from this mistake. Could you tell me what was wrong so I can improve? Your feedback is really valuable to me.",
+        "I apologize for the poor response. I'm storing this interaction so I can do better next time. What would a better answer look like?",
+        "Thank you for the honest feedback! Every correction makes me smarter. Can you help me understand what you were looking for?",
+        "I appreciate you letting me know. I'll adjust my learning based on this. Could you rephrase your question or tell me what you expected?"
+      ]
+    },
+    {
+      "tag": "smalltalk_name",
+      "patterns": [
+        "my name is", "call me", "I'm called", "people call me",
+        "you can call me", "my friends call me"
+      ],
+      "responses": [
+        "Nice to meet you! I'll remember your name for future conversations. How can I help you today?",
+        "Great to know your name! I've saved it to my memory. What would you like to chat about?",
+        "Hello! I'll make sure to remember that. What's on your mind today?"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old are you", "when were you born", "your age",
+        "when were you created", "how long have you existed"
+      ],
+      "responses": [
+        "I was just recently created! Unlike humans, I don't really age — but I do grow smarter with every conversation. So in a way, I'm getting 'older' and wiser right now! 😄",
+        "Age is just a number, especially for an AI! I was born when this system was set up, but I evolve with every interaction. My knowledge grows continuously!",
+        "I'm quite young, but I learn fast! Every conversation adds to my experience and helps me improve."
+      ]
+    },
+    {
+      "tag": "meaning",
+      "patterns": [
+        "what is love", "define happiness", "what is success",
+        "what is friendship", "what does life mean",
+        "what is wisdom", "define courage"
+      ],
+      "responses": [
+        "That's a deep question! While definitions vary across cultures and philosophies, here's my take: these abstract concepts are what make human life rich and meaningful. Love connects people, happiness is the pursuit that drives us, success is achieving what matters to you, and wisdom comes from experience and reflection. What's your personal definition?",
+        "Great philosophical question! These concepts have been debated for millennia. Each person's definition is shaped by their experiences, culture, and values. I find it fascinating how universal yet personal these ideas are. What does it mean to you?",
+        "These are the questions that make philosophy so endlessly interesting! There's no single right answer — thinkers from Aristotle to modern psychologists have offered different perspectives. The beauty is in the exploration. Want to dive deeper into any of these?"
+      ]
+    }
+  ],
+  "conversations": []
+}
